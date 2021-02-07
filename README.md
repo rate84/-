@@ -12,7 +12,7 @@
  * ノートPC　又は　モニター ×1
  * LED ×1
  * 220Ωの抵抗 ×1
- * ジャンプワイヤー ×2
+ * ジャンプワイヤー雄雌 ×2
  
 # 事前準備
  
@@ -27,7 +27,7 @@
 # コマンドの操作手順
  
  ```
-$ git clone https://github.com/masuko-shingo/kadai1.git     //このリポジトリをローカルにクローンする
+$ git clone https://github.com/rate84/-     //リポジトリをローカルにクローンする
 $ cd -/myled/      //ディレクトリの移動
 $ make      //コンパイル
 $ sudo insmod myled.ko      //モジュールのインストール
@@ -35,7 +35,7 @@ $ sudo chmod 666 /dev/myled0        //パーミッションの変更
 $ echo 1 > /dev/myled0      //ledの点灯
 $ echo 2 > /dev/myled0      //ledの点滅
 $ echo 0 > /dev/myled0      //ledの消灯
-$ sudo rmmod myled.ko       //カーネルモジュールのアンインストール
+$ sudo rmmod myled.ko       //終了
 ```
  
 # 作成した回路
@@ -44,3 +44,4 @@ $ sudo rmmod myled.ko       //カーネルモジュールのアンインスト�
  
 # 実際の動作の様子
 
+https://www.youtube.com/watch?v=uIDRZ539xec
