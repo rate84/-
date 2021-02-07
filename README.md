@@ -32,7 +32,7 @@
  
 # 作成した回路
  
-
+![C88E937D-19FA-4A39-8389-71434AAAFD01](https://user-images.githubusercontent.com/75563494/107159020-f20d3d00-69d0-11eb-8e38-10377c039d4b.jpg)
  
 # 実際の動作の様子
 
