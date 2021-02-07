@@ -30,6 +30,17 @@
  * echo 2 > /dev/myled0(LEDが点滅)
  * echo 0 > /dev/myled0(LEDが消灯)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
  
+ ```
+$ git clone https://github.com/masuko-shingo/kadai1.git     //このリポジトリをローカルにクローンする
+$ cd kadai1/myled/      //ディレクトリの移動
+$ make      //コンパイル
+$ sudo insmod myled.ko      //カーネルモジュールのインストール
+$ sudo chmod 666 /dev/myled0        //パーミッションの変更
+$ echo 1 > /dev/myled0      //ledの点灯
+$ echo 0 > /dev/myled0      //ledの消灯
+$ sudo rmmod myled.ko       //カーネルモジュールのアンインストール
+```
+ 
 # 作成した回路
  
 ![C88E937D-19FA-4A39-8389-71434AAAFD01](https://user-images.githubusercontent.com/75563494/107159020-f20d3d00-69d0-11eb-8e38-10377c039d4b.jpg)
